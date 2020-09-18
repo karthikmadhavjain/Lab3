@@ -12,7 +12,7 @@ int main(void) {
   const char *integer = readline("\nEnter an int: ");
   int integer2 = atoi(integer); 
   addition = sum_n(integer2);
-  printf("\nsum is %d.",addition);
+  printf("sum is %d.",addition);
   char *string = readline("\nEnter a string: ");
   print_n(string, integer2);
   return 0;
