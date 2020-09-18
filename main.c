@@ -11,7 +11,7 @@ int main(void) {
   printf("Enter an int: ");
   scanf("%d", &integer); 
   addition = sum_n(integer);
-  printf("sum is %d.",addition);
+  printf("\nsum is %d.",addition);
   char *string = readline("\nEnter a string: ");
   print_n(string, integer);
   return 0;
