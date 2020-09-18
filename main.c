@@ -2,18 +2,19 @@
 
 #include <stdio.h>
 #include<readline/readline.h>
-
+#include<string.h>
+#include<stdlib.h>
 int sum_n(int n);
 void print_n(const char* s,int n);
 
 int main(void) {
-  int addition,integer;
-  printf("Enter an int: ");
-  scanf("%d", &integer); 
-  addition = sum_n(integer);
+  int addition;
+  const char *integer = readline("\nEnter an int: ");
+  int integer2 = atoi(integer); 
+  addition = sum_n(integer2);
   printf("\nsum is %d.",addition);
   char *string = readline("\nEnter a string: ");
-  print_n(string, integer);
+  print_n(string, integer2);
   return 0;
 }
 
