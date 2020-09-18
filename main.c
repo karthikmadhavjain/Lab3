@@ -9,7 +9,7 @@ void print_n(const char* s,int n);
 
 int main(void) {
   int addition;
-  const char *integer = readline("\nEnter an int: ");
+  const char *integer = readline("Enter an int: ");
   int integer2 = atoi(integer); 
   addition = sum_n(integer2);
   printf("sum is %d.",addition);
