@@ -22,11 +22,13 @@ int sum_n(int n){
   if(n != 0)
     value = n + sum_n(n-1);
     return value;
+  return value;
 }
 
 void print_n(const char*s, int n){
   if(n > 0)
     printf("%s\n",s);
     n--;
-    print_n(s, n);
+    if(n>0)
+      print_n(s, n);  
 }
